@@ -17,7 +17,6 @@ jobs:
     - name: docker login
       uses: docker/login-action@v2.1.0
       with:
-       registry: registry-1.docker.io
        username: ${{secrets.DOCKERHUBUSERNAME}}
        password: ${{secrets.DOCKERHUBPASSWORD}}
     - name: Docker Pull
@@ -34,6 +33,5 @@ jobs:
     - name: docker login
       uses: docker/login-action@v2.1.0
       with:
-       registry: registry-1.docker.io
        username: ${{secrets.DOCKERHUBUSERNAME}}
        password: ${{secrets.DOCKERHUBPASSWORD}}
