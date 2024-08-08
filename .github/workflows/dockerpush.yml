@@ -11,7 +11,7 @@ on:
 jobs:
   LogintodockerhubDEV:
     runs-on: ubuntu-latest
-    environment: Dev
+    environment: waseem-dev
     steps:
     - uses: actions/checkout@v3
     - name: docker login
@@ -28,7 +28,7 @@ jobs:
       run: docker push waseem9579/1stdockerrepo
   LogintodockerhubQA:
     runs-on: ubuntu-latest
-    environment: QA
+    environment: acc
     steps:
     - uses: actions/checkout@v3
     - name: docker login
